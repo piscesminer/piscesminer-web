@@ -1,0 +1,437 @@
+
+<!DOCTYPE html>
+<html lang="zh">->
+
+<head>
+    <meta charset="utf-8">
+
+    <script src="js/lib/modernizr.js"></script>
+    <script src="js/lib/pace.js"></script>
+    <script>
+        (function (w) {
+            var dpr = ((w.devicePixelRatio === undefined) ? 1 : w.devicePixelRatio);
+            if (!!w.navigator.standalone) {
+                var r = new XMLHttpRequest();
+                r.open('GET', 'https://www.piscesminer.com/retinaimages.php?devicePixelRatio=' + dpr, false);
+                r.send()
+            } else {
+                document.cookie = 'devicePixelRatio=' + dpr + '; path=/'
+            }
+        })(window)
+    </script>
+    <noscript>
+        <style id="devicePixelRatio"
+            media="only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)">
+            html {
+                background-image: url("/retinaimages.php?devicePixelRatio=2")
+            }
+        </style>
+    </noscript>
+
+    <title>Pisces</title>
+
+    <meta name="robots" content="index, nofollow">
+    <meta name="description" content="Your website description here">
+    <meta name="keywords" content="your, website, keywords, here">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="css/lib/magnific-popup.css">
+    <link rel="stylesheet" href="css/lib/lite.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blue.css">
+
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+</head>
+
+
+<body class="body-push personal auto-close-menu">
+
+
+    <!-- Menu -->
+    <nav class="menu" id="theMenu">
+        <div class="menu-wrap">
+            <a href="#home"><img src="img/logo.png" alt="logo-menu" class="logo"></a>
+            <!--<h1 class="logo"><a href="#home">Focus</a></h1>-->
+            <!--<i class="icon-remove menu-close"></i>-->
+            <a href="#home">Home</a>
+            <a href="#process">Featurs</a>
+            <a href="#portfolio">Product</a>
+            <a href="#about-me">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#"><i class="icon-facebook"></i></a>
+            <a href="#"><i class="icon-twitter"></i></a>
+            <a href="#"><i class="icon-dribbble"></i></a>
+            <a href="#"><i class="icon-envelope"></i></a>
+        </div>
+
+        <!-- Menu button -->
+        <div id="menuToggle"><i class="icon-reorder"></i></div>
+    </nav>
+
+
+    <!-- Fullscreen slider -->
+    <div id="home"></div>
+    <div id="slides">
+        <ul class="slides-container">
+            <li>
+                <!-- Slide -->
+                <div style="background-image: url('img/bg/bg4.jpeg');" class="fullscreen-image"></div>
+                <div class="header-center fade-in">
+                    <h1 class="fittext white">Pisces Miner</h1>
+                    <p class="uppercase white">专业的Lora户外网关 &amp; 让Lora覆盖地球每一个角落</p>
+                    <p><a href="#process" class="button white-border">查看参数</a></p>
+                </div>
+            </li>
+            <li>
+                <!-- Slide -->
+                <div style="background-image: url('img/bg/bg6.jpeg');" class="fullscreen-image"></div>
+                <div class="header-center fade-in">
+                    <h1 class="fittext white">Pisces OutDoor Miner</h1>
+                    <p class="uppercase white">高覆盖率防风防水防静电 室外Rora网关的不二之选</p>
+                    <p><a href="#process" class="button white-border">查看参数</a></p>
+                </div>
+            </li>
+            <li>
+                <!-- Slide -->
+                <div style="background-image: url('img/bg/bg5.jpeg');" class="fullscreen-image"></div>
+                <div class="header-center fade-in">
+                    <h1 class="fittext white">Pisces OutDoor Miner Pluse</h1>
+                    <p class="uppercase white">太阳能发电、风力发电、GPRS网络供应。室外无限制性Rora网关</p>
+                    <p><a href="#process" class="button white-border">查看参数</a></p>
+                </div>
+            </li>
+            <li>
+                <!-- Slide with a logo - or any other image -->
+                <!-- <div style="background-image: url('images/placeholder-slide-2.jpg');" class="fullscreen-image"></div>
+				<div class="header-center fade-in">
+					<img class="preserve margin-bottom" src="images/logo-focus.png" alt="logo-focus">
+					<p class="uppercase white">Pisces Cluster Miner</p>
+					<p><a href="#introduction" class="button white-border">Experience more</a></p>
+				</div> -->
+                <div style="background-image: url('img/bg/bg3.jpeg');" class="fullscreen-image"></div>
+                <div class="header-center fade-in">
+                    <h1 class="fittext white">Pisces Cluster Miner</h1>
+                    <p class="uppercase white">高性价比的集群化解决方案</p>
+                    <p><a href="#process" class="button white-border">查看参数</a></p>
+                </div>
+            </li>
+        </ul>
+        <nav class="slides-navigation">
+            <a href="#" class="prev"><i class="icon-long-arrow-left"></i></a>
+            <a href="#" class="next"><i class="icon-long-arrow-right"></i></a>
+        </nav>
+    </div>
+
+
+    <!-- 🍺我们的优势 -->
+    <section id="process" class="process">
+
+        <!-- Title -->
+        <div class="row">
+            <div class="ten columns offset-by-one title">
+                <h1>Pisces Miner</h1>
+                <h2>我们的优势</h2>
+                <hr>
+            </div>
+        </div>
+
+        <!-- Process steps -->
+        <div class="row">
+
+            <!-- Process step -->
+            <div class="desktop-three columns tablet-six columns mobile-six columns">
+                <i class="icon-lightbulb process-icon"></i>
+                <h3>超强供应链</h3>
+                <p>我们的合作商拥有扎根物联网行业十多年生产经验也产品供应。这会帮助我们在芯片短缺的今天集成更具优势的产品生产供货链，从而保证双鱼矿机的产品与质量。</p>
+            </div>
+
+            <!-- Process step -->
+            <div class="desktop-three columns tablet-six columns mobile-six columns">
+                <i class="icon-cogs process-icon"></i>
+                <h3>更强的户外性能</h3>
+                <p>专业的室外Lora网关路由，高规格防水防静电，且配备太阳能供电板、GPRS无线数据等，帮助Lora网关适应任何环境。</p>
+            </div>
+
+            <!-- Process step -->
+            <div class="desktop-three columns tablet-six columns mobile-six columns">
+                <i class="icon-check process-icon"></i>
+                <h3>多功能的室内路由</h3>
+                <p>不止于路由，同时支持2.4/5G频率。使得双鱼矿机不局限于矿机，同时也是得力的家用路由器。</p>
+            </div>
+
+            <!-- Process step -->
+            <div class="desktop-three columns tablet-six columns mobile-six columns">
+                <i class="icon-rocket process-icon"></i>
+                <h3>更高效的集群方案</h3>
+                <p>双鱼矿机提供了了更强的路由集群方案，通过提高集群的挖矿效益实现更高的集群矿机性价比。</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- 🍺我们的产品 -->
+    <section id="portfolio" class="portfolio">
+
+        <!-- Title and navigation -->
+        <div class="row">
+            <div class="ten columns offset-by-one title">
+                <h1>双鱼矿机</h1>
+                <h2 id="filter-container">我们的产品：
+                </h2>
+                <hr>
+            </div>
+        </div>
+
+        <!-- Portfolio grid with projects -->
+        <div id="portfolio-grid" class="row">
+
+            <!-- Project item -->
+            <div class="desktop-four columns tablet-six columns mobile-six columns mix illustration project-item">
+                <a class="popup" href="img/staytuned.png">
+                    <span class="project-hover">
+                        <span>双鱼标准室内版<br>
+                            <b>平淡单稳定</b></span>
+                    </span>
+                    <img src="img/staytuned.png" alt="placeholder-thumbnail">
+                </a>
+            </div>
+
+            <!-- Project item -->
+            <div class="desktop-four columns tablet-six columns mobile-six columns mix website project-item">
+                <a class="popup" href="img/staytuned.png">
+                    <span class="project-hover">
+                        <span>双鱼标准室外版<br>
+                            <b>防风防水防静电</b></span>
+                    </span>
+                    <img src="img/staytuned.png" alt="placeholder-thumbnail">
+                </a>
+            </div>
+
+            <!-- Project item -->
+            <div class="desktop-four columns tablet-six columns mobile-six columns mix photo project-item">
+                <a class="popup" href="img/staytuned.png">
+                    <span class="project-hover">
+                        <span>双鱼无线室外版<br>
+                            <b>可适应更恶劣的无线网络环境</b></span>
+                    </span>
+                    <img src="img/staytuned.png" alt="placeholder-thumbnail">
+                </a>
+            </div>
+
+            <!-- Project item -->
+            <div class="desktop-four columns tablet-six columns mobile-six columns mix photo project-item">
+                <a class="popup" href="img/staytuned.png">
+                    <span class="project-hover">
+                        <span>双鱼室外版plus<br>
+                            <b>可以适应更为恶劣的无电无网环境</b></span>
+                    </span>
+                    <img src="img/staytuned.png" alt="placeholder-thumbnail">
+                </a>
+            </div>
+
+            <!-- Project item -->
+            <div class="desktop-four columns tablet-six columns mobile-six columns mix website project-item">
+                <a href="portfolio-personal.html">
+                    <span class="project-hover">
+                        <span>双鱼多功能室内版<br>
+                            <b>不止于矿机，更是家用路由器。</b></span>
+                    </span>
+                    <img src="img/staytuned.png" alt="placeholder-thumbnail">
+                </a>
+            </div>
+
+            <!-- Project item -->
+            <div class="desktop-four columns tablet-six columns mobile-six columns mix photo project-item">
+                <a class="popup" href="img/staytuned.png">
+                    <span class="project-hover">
+                        <span>双鱼集群矿机<br>
+                            <b>高性价比的集群解决方案、</b></span>
+                    </span>
+                    <img src="img/staytuned.png" alt="placeholder-thumbnail">
+                </a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </section>
+
+
+    <!-- 🍺About me 关于我们 -->
+    <section id="about-me" class="about-me">
+
+        <!-- Header with text ticker -->
+        <div class="header" style="background-image: url('img/bg/bg4.jpeg');">
+            <div class="text-ticker">
+                <ul>
+                    <li class="fitticker">善于创新</li>
+                    <li class="fitticker">效率优先</li>
+                    <li class="fitticker">户外王者</li>
+                    <li class="fitticker">校企联合</li>
+                    <li class="fitticker">时代先锋</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Title -->
+        <div class="row">
+            <div class="ten columns offset-by-one title">
+                <h1>关于双鱼</h1>
+                <h2>专注于POW/POC的区块链新星</h2>
+                <hr>
+            </div>
+        </div>
+        <!-- About me introduction -->
+        <div class="row">
+            <div class="ten columns offset-by-one margin-bottom">
+                <p>双鱼是一家位于中国杭州的物联网+区块链公司依托浙江大学的教学资源致力于制造创新互联网产品的公司。着重于挖掘区块链技术中的潜在价值，并针对POW模式十分热衷。目前我们正在与大学进行合作，实现校企联合，为区块链社区引入新鲜的血液
+                </p>
+                <img src="img/logo.png" alt="placeholder-avatar" class="image-center image-circle margin-bottom">
+            </div>
+        </div>
+
+        <!-- About me facts -->
+        <div class="row text-left">
+            <div class="one column">
+                <i class="icon-camera column-icon"></i>
+            </div>
+            <div class="five columns">
+                <h3>高校科研转化</h3>
+                <p>目前双鱼科技与浙江大学有这深度的科研合作，并且将在未来给区块链带来更多的新鲜血液。</p>
+            </div>
+
+            <div class="one column">
+                <i class="icon-headphones column-icon"></i>
+            </div>
+            <div class="five columns">
+                <h3>强大的合作商</h3>
+                <p>绿掌科技为双鱼提供了强大物联网生产链与供应链。大大的提高了双鱼在芯片短缺时代的产品质量。</p>
+            </div>
+
+            <div class="one column">
+                <i class="icon-pencil column-icon"></i>
+            </div>
+            <div class="five columns">
+                <h3>优质的创新能力</h3>
+                <p>民用化的路由矿机，三防无线网络的室外矿机。优质的创新能力帮助我们在提升矿机质量和使用场景上越来越强。</p>
+            </div>
+
+            <div class="one column">
+                <i class="icon-film column-icon"></i>
+            </div>
+            <div class="five columns">
+                <h3>完美的售后质量</h3>
+                <p>我们遵循区块链社区准则与开发规范，并向购买矿机的用户提供竭诚的售后保障服务，覆盖全球的售后解决方案。</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 🍺与我们合作 -->
+    <section id="resume" class="resume">
+
+        <div class="row">
+            <div class="ten columns offset-by-one title">
+                <h1>与我们合作的企业</h1>
+                <h2>物联网行业精英</h2>
+                <hr>
+            </div>
+        </div>
+
+        <!-- Work experience -->
+        <div class="row margin">
+            <div class="two columns offset-by-one text-right">
+                <h2 class="years"><a href="http://greenpalm.sidcloud.cn/">杭州绿掌科技有限公司</a></h2>
+            </div>
+            <div class="eight columns text-left column-border">
+                <h3> 绿掌科技有限公司成立于2012年，有着多年物联网技术积淀，是一家专业从事交直流智能电表，智能水表，智能充电终端和电力信息采集系统终端的研发，生产和销售的高新技术企业。电能计量箱，断路器，电缆分支箱等产品。
+                </h3>
+                <p> 公司产品涵盖了单相，三相电子式电能表，单相，三相智能式电能表，电表配件等世界上几乎所有的电表。对于产品容量，它每年向世界各地的业主提供300万米。该公司的AMI智能电表读取解决方案为传统电力行业提供解决方案，包括手动电表读取周期长，数据准确性不足，电表读取和运营成本高，电能质量监控困难，电能质量监控困难以及超高商业线路失利。它适用于居民和大型用户
+                </p>
+            </div>
+        </div>
+
+
+        <!-- 🍺联系我们 -->
+        <section id="contact" class="contact">
+            <div class="header-inherited" style="background-image: url('img/bg/bg4.jpeg');">
+                <div class="row">
+                    <div class="eight columns offset-by-two">
+                        <div id="contact-slider">
+                            <ul>
+                                <li>
+                                    <!-- Contact details -->
+                                    <h2><a data-rel="2" href="#" class="contactLink">联系我们 <i
+                                                class="icon-long-arrow-right"></i></a></h2>
+                                    <h2>Call <a href="tel:+12125554477">+852 6584 7091</a></h2>
+                                    <p class="script margin-top">公司地址</p>
+                                    <p>中国浙江<br>
+                                        杭州市钱塘新区高新创业园区</p>
+                                    <a href="#"><i class="icon-facebook medium-icon white-border"></i></a>
+                                    <a href="#"><i class="icon-google-plus medium-icon white-border"></i></a>
+                                    <a href="#"><i class="icon-dribbble medium-icon white-border"></i></a>
+                                </li>
+                                <li>
+                                    <!-- Contact form -->
+                                    <form class="contact-form" novalidate="" id="contactForm">
+                                        <div class="form-column">
+                                            <input type="text" id="contactName" name="name" placeholder="名称""
+												class=" text">
+                                            <input type="email" id="contactEmail" name="email" placeholder="订阅邮箱"
+                                                class="email">
+                                            <input type="text" id="contactPhone" name="phonenumber" placeholder="手机号"
+                                                class="text">
+                                        </div>
+                                        <div class="form-column">
+                                            <textarea id="contactMessage" placeholder="Message" name="message"
+                                                class="textarea"></textarea>
+                                        </div>
+                                        <button class="button white-border">发送</button>
+                                    </form>
+                                    <br class="clear">
+                                    <p class="script no-margin-top"><a data-rel="1" href="#" class="contactLink"><i
+                                                class="icon-long-arrow-left"></i> 返回</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="modalOverlay" class="modal-overlay hide"></div>
+        <div id="modal" class="modal hide">
+            <h1 id="modalTitle">Thanks!</h1>
+            <p id="modalContent">We'll be in touch real soon!</p>
+            <p id="modalClose" class="modal-close">(Close this thing)</p>
+        </div>
+
+        <div id="loader">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABNVJREFUeNrcWt1x4jAQVjx5j1PBkQrCVRCnAqACoAJgknfgnRmgAisVYCrAqSBOBfgqOKeCOznz7bFZZGN+7dzO7CRYtrzf/mm18tXT05M6EbmGPcN1w/fst6TIcGL4Ff+H+H0QTSaTz7/OCQB0DC8M/zY8NHxjeGl4bPjW8JXggeE5nu3huQXmOZiuj9B+H4LEECwVsAaL1MDcIiHuDfE7YHM1MdcUc832tdIhFkkBrA0/GNZwjyGuDeFWkm4w9gYL+MwCCeb5abiFedf7Wmgfi9QhgAvhSesBBIiExers7wdiYonxHxkWCMEe3tXG3MmpLJJqZ8WES6lr+A4uFWFsyrQ+hbCcUms1MF8NrtaDBUbCDX9ifI25j7bICG5BGWfA/JxA9iCYtoznWdiD1ut4RwMKoszWhSVXmFcfCoT78lhojcxPY3rPWIvAM8w1xF8ptGayqKz3XO+wRAeaaQktTzE2hiDHkowNKbRm741EPOYC6UBDKYhH9qALjSnmw6ckio08MCvEZrIr2Clos0BEZwKhWDpuQXAfa4xiYAIsoDuzFmkiC0RXXYa6YB+JhIgW3k4ekD4sMhB+uLgwCG4BzZSrWDabsqXgCxAXcRGIzDDC2ECVQ2NYoCliKYLit4D0mUl5vAxxLSkJSAIwUwvAng1ID+VCItLs2JbuSnAxJeLiswh9fn7ucCB0w0wsePUTrROncrG2uDZHNaCusLFasCDiAf4uVvMyyUXdxVO/i7ru1mH7gbl4qHlA2XHuWAlF0NM1z4ELxSIOmshesaoWLbFf4ZQWlXUHcSCr1QfcUDWKLCV9eu3BgdDvYtCrQKbKAlKzuJzrsBs41QruKcqgmFtlMpmE5FqeiIV6iYtfUSBuVtEYi4wVqW9GjvpP6DsCqXHXNyWKmwUksWSGqgGJREyHDi56O1JcVcizLNKfycmhPJyX4ipEtsU77ZW9O7TEF1hBq0C2iuNz8SbXstUvjQrGBtWA3EI1ihHqJ3H3CizXyqYO5ErEZjAwq/u/GAlEeUzVcLNCe5FexlZjydPvUm03nF/UpudbNvXV5nTrS4/BWENzIFptH8zY9sllZaqh6OJsWcgR+19pgQGuuSW6lG9pgPiyx8CBzNSm1c+DPi7Rxah1OxJB3wS4xAYkgQV8YYEuHr60i/lQbEu4GXXkZ3lFo4YFpiKDUQ/WvzCIR6b19PeKKXdn9duC6TrCxcgyizPGTJpw3nJAUOs2KgKEjhOmAowGmCZe5p0hxb6pzRlJwkoQApF5MubkbPIpXmxg6JhhdQJA6fxrpNOWSLMjBkKrnGZh3tGbZpmD/9YA6gMEdVxe1KZLXqQcp9Pd2KJpD++lwnWsdnQ8dx2GktArFJYDmJxOrUZqc6LbVl9Pf1MBf4nKlc7daZV+FMA9zEHH4JRJ9S7NFDmeTl90hyB/g2uFzPQz9fVzjhB9MlckhTlTQiJSapvVdTHGKVsWaoQU3bNTAhgDEI8NWrBuIawLtxjCCjdMYA+gfczxh2XBgG3o5rB44W7Ovs0HDeu8Mgt1mOYpGdxCkBT4h2Wed4zRPXXM84r59z7KOOTrILLACC9vQMOh2nyDRV3ymLmhyzZC92rzxUMAC+hjUt/1kalTg/lHZz0mtKSQ7UDH6siPzjj9FWAA4gh/kLD8SJ0AAAAASUVORK5CYII="
+                alt="loader">
+        </div>
+
+        <!-- Credits and back to top button -->
+        <div class="contact-bottom">
+            <p class="credit"><a href="index.html" target="_blank">双鱼矿机</a></p>
+        </div>
+        <!-- The end -->
+
+
+        <!-- Scripts -->
+        <script src="js/lib/jquery.min.js"></script>
+        <script src="js/lib/classie.js"></script>
+        <script src="js/lib/smoothscroll.js"></script>
+        <script src="js/lib/jquery.fittext.js"></script>
+        <script src="js/lib/jquery.superslides.min.js"></script>
+        <script src="js/lib/jquery.sudoslider.min.js"></script>
+        <script src="js/lib/jquery.mixitup.min.js"></script>
+        <script src="js/lib/jquery.magnific-popup.min.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>

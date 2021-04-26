@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<script src="js/lib/modernizr.js"></script>
+	<script src="js/lib/pace.js"></script>
+	<script>
+		(function (w) {
+			var dpr = ((w.devicePixelRatio === undefined) ? 1 : w.devicePixelRatio);
+			if (!!w.navigator.standalone) {
+				var r = new XMLHttpRequest();
+				r.open('GET', 'https://www.piscesminer.com/retinaimages.php?devicePixelRatio=' + dpr, false);
+				r.send()
+			} else {
+				document.cookie = 'devicePixelRatio=' + dpr + '; path=/'
+			}
+		})(window)
+	</script>	
+	<noscript>
+		<style id="devicePixelRatio"
+			media="only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)">
+			html {
+				background-image: url("/retinaimages.php?devicePixelRatio=2")
+			}
+		</style>
+	</noscript>
+
+	<title>Pisces</title>
+
+	<meta name="robots" content="index, nofollow">
+	<meta name="description" content="Your website description here">
+	<meta name="keywords" content="your, website, keywords, here">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="css/lib/font-awesome.min.css">
+	<link rel="stylesheet" href="css/lib/magnific-popup.css">
+	<link rel="stylesheet" href="css/lib/lite.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/blue.css">
+
+	<link rel="shortcut icon" href="images/favicon/favicon.ico">
+</head>
+
+
+<body class="body-push personal auto-close-menu">
+
+
+	<!-- Menu -->
+	<nav class="menu" id="theMenu">
+		<div class="menu-wrap">
+			<a href="#home"><img src="img/logo.png" alt="logo-menu" class="logo"></a>
+			<a href="#home">Home</a>
+			<a href="#process">Featurs</a>
+			<a href="#portfolio">Product</a>
+			<a href="#about-me">About</a>
+			<a href="#contact">Contact</a>
+			<a href="#"><i class="icon-facebook"></i></a>
+			<a href="#"><i class="icon-twitter"></i></a>
+			<a href="#"><i class="icon-dribbble"></i></a>
+			<a href="#"><i class="icon-envelope"></i></a>
+		</div>
+
+		<!-- Menu button -->
+		<div id="menuToggle"><i class="icon-reorder"></i></div>
+	</nav>
+
+
+	<!-- Fullscreen slider -->
+	<div id="home"></div>
+	<div id="slides">
+		<ul class="slides-container">
+			<li>
+				<!-- Slide -->
+				<div style="background-image: url('img/bg/bg4.jpeg');" class="fullscreen-image"></div>
+				<div class="header-center fade-in">
+					<h1 class="fittext white">Pisces Miner</h1>
+					<p class="uppercase white">Professional Lora outdoor gateway &amp; Let Lora cover every corner of
+						the earth</p>
+					<p><a href="#process" class="button white-border">More information</a></p>
+				</div>
+			</li>
+			<li>
+				<!-- Slide -->
+				<div style="background-image: url('img/bg/bg6.jpeg');" class="fullscreen-image"></div>
+				<div class="header-center fade-in">
+					<h1 class="fittext white">Pisces OutDoor Miner</h1>
+					<p class="uppercase white">High coverage, windproof, waterproof and anti-static, the best choice for
+						outdoor Rora gateways</p>
+					<p><a href="#process" class="button white-border">More information</a></p>
+				</div>
+			</li>
+			<li>
+				<!-- Slide -->
+				<div style="background-image: url('img/bg/bg5.jpeg');" class="fullscreen-image"></div>
+				<div class="header-center fade-in">
+					<h1 class="fittext white">Pisces OutDoor Miner Pluse</h1>
+					<p class="uppercase white">Solar power, wind power, GPRS network supply. Outdoor Unrestricted Rora
+						Gateway</p>
+					<p><a href="#process" class="button white-border">More information</a></p>
+				</div>
+			</li>
+			<li>
+				<!-- Slide with a logo - or any other image -->
+				<!-- <div style="background-image: url('images/placeholder-slide-2.jpg');" class="fullscreen-image"></div>
+				<div class="header-center fade-in">
+					<img class="preserve margin-bottom" src="images/logo-focus.png" alt="logo-focus">
+					<p class="uppercase white">Pisces Cluster Miner</p>
+					<p><a href="#introduction" class="button white-border">Experience more</a></p>
+				</div> -->
+				<div style="background-image: url('img/bg/bg3.jpeg');" class="fullscreen-image"></div>
+				<div class="header-center fade-in">
+					<h1 class="fittext white">Pisces Cluster Miner</h1>
+					<p class="uppercase white">Cost-effective clustering solution</p>
+					<p><a href="#process" class="button white-border">More information</a></p>
+				</div>
+			</li>
+		</ul>
+		<nav class="slides-navigation">
+			<a href="#" class="prev"><i class="icon-long-arrow-left"></i></a>
+			<a href="#" class="next"><i class="icon-long-arrow-right"></i></a>
+		</nav>
+	</div>
+
+
+	<!-- 🍺我们的优势 -->
+	<section id="process" class="process">
+
+		<!-- Title -->
+		<div class="row">
+			<div class="ten columns offset-by-one title">
+				<h1>Pisces Miner</h1>
+				<h2>Our Features</h2>
+				<hr>
+			</div>
+		</div>
+
+		<!-- Process steps -->
+		<div class="row">
+
+			<!-- Process step -->
+			<div class="desktop-three columns tablet-six columns mobile-six columns">
+				<i class="icon-lightbulb process-icon"></i>
+				<h3>Super supply chain</h3>
+				<p>Our partners have more than ten years of production experience and product supply rooted in the
+					Internet of Things industry. This will help us integrate a more advantageous product production
+					supply chain today when there is a shortage of chips, so as to ensure the product and quality of the
+					Pisces mining machine.</p>
+			</div>
+
+			<!-- Process step -->
+			<div class="desktop-three columns tablet-six columns mobile-six columns">
+				<i class="icon-cogs process-icon"></i>
+				<h3>Stronger outdoor performance</h3>
+				<p>Professional outdoor Lora gateway routing, high-standard waterproof and anti-static, and equipped
+					with solar power supply panels, GPRS wireless data, etc., to help Lora gateway adapt to any
+					environment.</p>
+			</div>
+
+			<!-- Process step -->
+			<div class="desktop-three columns tablet-six columns mobile-six columns">
+				<i class="icon-check process-icon"></i>
+				<h3>Multifunctional indoor routing</h3>
+				<p>More than routing, it also supports 2.4/5G frequency. The Pisces mining machine is not limited to the
+					mining machine, but also a powerful home router.</p>
+			</div>
+
+			<!-- Process step -->
+			<div class="desktop-three columns tablet-six columns mobile-six columns">
+				<i class="icon-rocket process-icon"></i>
+				<h3>More efficient cluster solution</h3>
+				<p>The Pisces mining machine provides a stronger routing cluster solution, and achieves a higher
+					cost-effective cluster mining machine by improving the mining efficiency of the cluster.</p>
+			</div>
+
+		</div>
+	</section>
+
+
+	<!-- 🍺我们的产品 -->
+	<section id="portfolio" class="portfolio">
+
+		<!-- Title and navigation -->
+		<div class="row">
+			<div class="ten columns offset-by-one title">
+				<h1>Pisces Miner</h1>
+				<h2 id="filter-container">our products:
+				</h2>
+				<hr>
+			</div>
+		</div>
+
+		<!-- Portfolio grid with projects -->
+		<div id="portfolio-grid" class="row">
+
+			<!-- Project item -->
+			<div class="desktop-four columns tablet-six columns mobile-six columns mix illustration project-item">
+				<a class="popup" href="img/staytuned.png">
+					<span class="project-hover">
+						<span>Pisces Standard Indoor Edition<br>
+							<b>Plain and stable</b></span>
+					</span>
+					<img src="img/staytuned.png" alt="placeholder-thumbnail">
+				</a>
+			</div>
+
+			<!-- Project item -->
+			<div class="desktop-four columns tablet-six columns mobile-six columns mix website project-item">
+				<a class="popup" href="img/staytuned.png">
+					<span class="project-hover">
+						<span>Pisces Standard Outdoor Edition<br>
+							<b>Windproof, waterproof and anti-static</b></span>
+					</span>
+					<img src="img/staytuned.png" alt="placeholder-thumbnail">
+				</a>
+			</div>
+
+			<!-- Project item -->
+			<div class="desktop-four columns tablet-six columns mobile-six columns mix photo project-item">
+				<a class="popup" href="img/staytuned.png">
+					<span class="project-hover">
+						<span>Pisces Wireless Outdoor Edition<br>
+							<b>Can adapt to the harsher wireless network environment</b></span>
+					</span>
+					<img src="img/staytuned.png" alt="placeholder-thumbnail">
+				</a>
+			</div>
+
+			<!-- Project item -->
+			<div class="desktop-four columns tablet-six columns mobile-six columns mix photo project-item">
+				<a class="popup" href="img/staytuned.png">
+					<span class="project-hover">
+						<span>Pisces Wireless Outdoor Plus<br>
+							<b>Can adapt to the harsher environment without electricity or network</b></span>
+					</span>
+					<img src="img/staytuned.png" alt="placeholder-thumbnail">
+				</a>
+			</div>
+
+			<!-- Project item -->
+			<div class="desktop-four columns tablet-six columns mobile-six columns mix website project-item">
+				<a href="portfolio-personal.html">
+					<span class="project-hover">
+						<span>Pisces multifunctional indoor version<br>
+							<b>Not only miners, but also home routers</b></span>
+					</span>
+					<img src="img/staytuned.png" alt="placeholder-thumbnail">
+				</a>
+			</div>
+
+			<!-- Project item -->
+			<div class="desktop-four columns tablet-six columns mobile-six columns mix photo project-item">
+				<a class="popup" href="img/staytuned.png">
+					<span class="project-hover">
+						<span>Pisces cluster mining machine<br>
+							<b>Cost-effective cluster solution</b></span>
+					</span>
+					<img src="img/staytuned.png" alt="placeholder-thumbnail">
+				</a>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</section>
+
+
+	<!-- 🍺About me 关于我们 -->
+	<section id="about-me" class="about-me">
+
+		<!-- Header with text ticker -->
+		<div class="header" style="background-image: url('img/bg/bg4.jpeg');">
+			<div class="text-ticker">
+				<ul>
+					<li class="fitticker">Good at innovation</li>
+					<li class="fitticker">Efficiency first</li>
+					<li class="fitticker">Outdoor mean nothing</li>
+					<li class="fitticker">School-enterprise alliance</li>
+					<li class="fitticker">Pioneer of the Times</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Title -->
+		<div class="row">
+			<div class="ten columns offset-by-one title">
+				<h1>About Pisces</h1>
+				<h2>A new blockchain star focusing on POW/POC</h2>
+				<hr>
+			</div>
+		</div>
+		<!-- About me introduction -->
+		<div class="row">
+			<div class="ten columns offset-by-one margin-bottom">
+				<p>Pisces is an Internet of Things + blockchain company located in Hangzhou, China. It is a company
+					dedicated to manufacturing innovative Internet products relying on the teaching resources of
+					Zhejiang University. It focuses on mining the potential value of blockchain technology and is very
+					keen on the POW model. We are currently cooperating with universities to realize school-enterprise
+					cooperation and introduce fresh blood to the blockchain community
+				</p>
+				<img src="img/logo.png" alt="placeholder-avatar" class="image-center image-circle margin-bottom">
+			</div>
+		</div>
+
+		<!-- About me facts -->
+		<div class="row text-left">
+			<div class="one column">
+				<i class="icon-camera column-icon"></i>
+			</div>
+			<div class="five columns">
+				<h3>University scientific research transformation</h3>
+				<p>At present, Pisces Technology and Zhejiang University have this in-depth scientific research
+					cooperation, and will bring more fresh blood to the blockchain in the future.</p>
+			</div>
+
+			<div class="one column">
+				<i class="icon-headphones column-icon"></i>
+			</div>
+			<div class="five columns">
+				<h3>Strong partner</h3>
+				<p>Green Palm Technology provides Pisces with a powerful IoT production chain and supply chain. Greatly
+					improved the quality of Pisces' products in the era of chip shortage.</p>
+			</div>
+
+			<div class="one column">
+				<i class="icon-pencil column-icon"></i>
+			</div>
+			<div class="five columns">
+				<h3>High-quality innovation ability</h3>
+				<p>Civilized router mining machine, outdoor mining machine with three-proof wireless network.
+					High-quality innovation capabilities help us become stronger and stronger in improving the quality
+					of mining machines and usage scenarios.</p>
+			</div>
+
+			<div class="one column">
+				<i class="icon-film column-icon"></i>
+			</div>
+			<div class="five columns">
+				<h3>Perfect after-sales quality</h3>
+				<p>We follow the blockchain community guidelines and development specifications, and provide dedicated
+					after-sales guarantee services to users who purchase mining machines, covering global after-sales
+					solutions.</p>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- 🍺与我们合作 -->
+	<section id="resume" class="resume">
+
+		<div class="row">
+			<div class="ten columns offset-by-one title">
+				<h1>Companies that work with us</h1>
+				<h2>IoT industry elite</h2>
+				<hr>
+			</div>
+		</div>
+
+		<!-- Work experience -->
+		<div class="row margin">
+			<div class="two columns offset-by-one text-right">
+				<h2 class="years"><a href="http://greenpalm.sidcloud.cn/">Hangzhou Green Palm Technology Co., Ltd.</a>
+				</h2>
+			</div>
+			<div class="eight columns text-left column-border">
+				<h3> Green Palm Technology Co., Ltd. was established in 2012 and has many years of Internet of Things
+					technology accumulation. It is a high-tech enterprise specializing in the research and development,
+					production and sales of AC and DC smart meters, smart water meters, smart charging terminals and
+					power information collection system terminals. Electric energy metering boxes, circuit breakers,
+					cable branch boxes and other products.
+				</h3>
+				<p> The company's products cover single-phase, three-phase electronic energy meters, single-phase,
+					three-phase intelligent energy meters, meter accessories and almost all meters in the world. For
+					product capacity, it provides 3 million meters to owners around the world every year. The company’s
+					AMI smart meter reading solution provides solutions for the traditional power industry, including
+					long manual meter reading cycles, insufficient data accuracy, high meter reading and operating
+					costs, difficulty in power quality monitoring, difficulty in power quality monitoring, and ultra
+					High commercial lines lose. It is suitable for residents and large users
+				</p>
+			</div>
+		</div>
+
+
+		<!-- 🍺联系我们 -->
+		<section id="contact" class="contact">
+			<div class="header-inherited" style="background-image: url('img/bg/bg4.jpeg');">
+				<div class="row">
+					<div class="eight columns offset-by-two">
+						<div id="contact-slider">
+							<ul>
+								<li>
+									<!-- Contact details -->
+									<h2><a data-rel="2" href="#" class="contactLink">contact us <i
+												class="icon-long-arrow-right"></i></a></h2>
+									<h2>Call <a href="tel:+12125554477">+852 6584 7091</a></h2>
+									<p class="script margin-top">company address</p>
+									<p>Zhejiang, China<br>
+										High-tech Pioneer Park, Qiantang New District, Hangzhou</p>
+									<a href="#"><i class="icon-facebook medium-icon white-border"></i></a>
+									<a href="#"><i class="icon-google-plus medium-icon white-border"></i></a>
+									<a href="#"><i class="icon-dribbble medium-icon white-border"></i></a>
+								</li>
+								<li>
+									<!-- Contact form -->
+									<form class="contact-form" novalidate="" id="contactForm">
+										<div class="form-column">
+											<input type="text" id="contactName" name="name" placeholder="名称""
+												class=" text">
+											<input type="email" id="contactEmail" name="email" placeholder="订阅邮箱"
+												class="email">
+											<input type="text" id="contactPhone" name="phonenumber" placeholder="手机号"
+												class="text">
+										</div>
+										<div class="form-column">
+											<textarea id="contactMessage" placeholder="Message" name="message"
+												class="textarea"></textarea>
+										</div>
+										<button class="button white-border">Send</button>
+									</form>
+									<br class="clear">
+									<p class="script no-margin-top"><a data-rel="1" href="#" class="contactLink"><i
+												class="icon-long-arrow-left"></i>Back</a></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div id="modalOverlay" class="modal-overlay hide"></div>
+		<div id="modal" class="modal hide">
+			<h1 id="modalTitle">Thanks!</h1>
+			<p id="modalContent">We'll be in touch real soon!</p>
+			<p id="modalClose" class="modal-close">(Close this thing)</p>
+		</div>
+
+		<div id="loader">
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABNVJREFUeNrcWt1x4jAQVjx5j1PBkQrCVRCnAqACoAJgknfgnRmgAisVYCrAqSBOBfgqOKeCOznz7bFZZGN+7dzO7CRYtrzf/mm18tXT05M6EbmGPcN1w/fst6TIcGL4Ff+H+H0QTSaTz7/OCQB0DC8M/zY8NHxjeGl4bPjW8JXggeE5nu3huQXmOZiuj9B+H4LEECwVsAaL1MDcIiHuDfE7YHM1MdcUc832tdIhFkkBrA0/GNZwjyGuDeFWkm4w9gYL+MwCCeb5abiFedf7Wmgfi9QhgAvhSesBBIiExers7wdiYonxHxkWCMEe3tXG3MmpLJJqZ8WES6lr+A4uFWFsyrQ+hbCcUms1MF8NrtaDBUbCDX9ifI25j7bICG5BGWfA/JxA9iCYtoznWdiD1ut4RwMKoszWhSVXmFcfCoT78lhojcxPY3rPWIvAM8w1xF8ptGayqKz3XO+wRAeaaQktTzE2hiDHkowNKbRm741EPOYC6UBDKYhH9qALjSnmw6ckio08MCvEZrIr2Clos0BEZwKhWDpuQXAfa4xiYAIsoDuzFmkiC0RXXYa6YB+JhIgW3k4ekD4sMhB+uLgwCG4BzZSrWDabsqXgCxAXcRGIzDDC2ECVQ2NYoCliKYLit4D0mUl5vAxxLSkJSAIwUwvAng1ID+VCItLs2JbuSnAxJeLiswh9fn7ucCB0w0wsePUTrROncrG2uDZHNaCusLFasCDiAf4uVvMyyUXdxVO/i7ru1mH7gbl4qHlA2XHuWAlF0NM1z4ELxSIOmshesaoWLbFf4ZQWlXUHcSCr1QfcUDWKLCV9eu3BgdDvYtCrQKbKAlKzuJzrsBs41QruKcqgmFtlMpmE5FqeiIV6iYtfUSBuVtEYi4wVqW9GjvpP6DsCqXHXNyWKmwUksWSGqgGJREyHDi56O1JcVcizLNKfycmhPJyX4ipEtsU77ZW9O7TEF1hBq0C2iuNz8SbXstUvjQrGBtWA3EI1ihHqJ3H3CizXyqYO5ErEZjAwq/u/GAlEeUzVcLNCe5FexlZjydPvUm03nF/UpudbNvXV5nTrS4/BWENzIFptH8zY9sllZaqh6OJsWcgR+19pgQGuuSW6lG9pgPiyx8CBzNSm1c+DPi7Rxah1OxJB3wS4xAYkgQV8YYEuHr60i/lQbEu4GXXkZ3lFo4YFpiKDUQ/WvzCIR6b19PeKKXdn9duC6TrCxcgyizPGTJpw3nJAUOs2KgKEjhOmAowGmCZe5p0hxb6pzRlJwkoQApF5MubkbPIpXmxg6JhhdQJA6fxrpNOWSLMjBkKrnGZh3tGbZpmD/9YA6gMEdVxe1KZLXqQcp9Pd2KJpD++lwnWsdnQ8dx2GktArFJYDmJxOrUZqc6LbVl9Pf1MBf4nKlc7daZV+FMA9zEHH4JRJ9S7NFDmeTl90hyB/g2uFzPQz9fVzjhB9MlckhTlTQiJSapvVdTHGKVsWaoQU3bNTAhgDEI8NWrBuIawLtxjCCjdMYA+gfczxh2XBgG3o5rB44W7Ovs0HDeu8Mgt1mOYpGdxCkBT4h2Wed4zRPXXM84r59z7KOOTrILLACC9vQMOh2nyDRV3ymLmhyzZC92rzxUMAC+hjUt/1kalTg/lHZz0mtKSQ7UDH6siPzjj9FWAA4gh/kLD8SJ0AAAAASUVORK5CYII="
+				alt="loader">
+		</div>
+
+		<!-- Credits and back to top button -->
+		<div class="contact-bottom">
+			<p class="credit"><a href="index.html" target="_blank">双鱼矿机</a></p>
+		</div>
+		<!-- The end -->
+
+
+		<!-- Scripts -->
+		<script src="js/lib/jquery.min.js"></script>
+		<script src="js/lib/classie.js"></script>
+		<script src="js/lib/smoothscroll.js"></script>
+		<script src="js/lib/jquery.fittext.js"></script>
+		<script src="js/lib/jquery.superslides.min.js"></script>
+		<script src="js/lib/jquery.sudoslider.min.js"></script>
+		<script src="js/lib/jquery.mixitup.min.js"></script>
+		<script src="js/lib/jquery.magnific-popup.min.js"></script>
+		<script src="js/main.js"></script>
+</body>
+
+</html>
